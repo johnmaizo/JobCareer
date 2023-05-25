@@ -161,6 +161,11 @@ main {
                             width: 100%;
                             padding: 1em;
                             border-radius: 59px;
+                            transition: 250ms ease;
+
+                            &:focus ~ label, &:not(:placeholder-shown) ~ label {
+                                font-size: 0.5rem;
+                            }
                         }
                     }
 
@@ -171,6 +176,9 @@ main {
                     }
                     
                 }
+
+
+
             }
         }
     }
@@ -445,6 +453,12 @@ footer {
     }
 }
 
+@media (max-width: 810px) {
+    main .career_advise {
+        width: 100% !important;
+    } 
+}
+
 @media (max-width: 768px) {
     header nav {
         display: flex !important;
@@ -508,3 +522,4 @@ footer {
         width: 100% !important;
     }
 }
+
