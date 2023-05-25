@@ -108,12 +108,25 @@ main {
                         border-radius: 50px;
                         box-shadow: 0 3px 5px 0  #0000005e;
 
+                        transition: background-color 250ms ease-in-out,
+                        color 250ms ease-in-out;
+
                         &:nth-child(1) {
                             background-color: #5258EE;
+
+                            &:is(:hover,:focus) {
+                                background-color: #fff;
+                                color: #5258EE;
+                            }
                         }
 
                         &:nth-child(2) {
                             background-color: #000;
+
+                            &:is(:hover, :focus) {
+                                background-color: #fff;
+                                color: #000;
+                            }
                         }
                     }
                 }
@@ -139,7 +152,10 @@ main {
                             aspect-ratio: 1/1;
                             width: 1em;
                         }
-                        
+                        transition: background-color 250ms ease-in-out;
+                        &:is(:hover, :focus) {
+                            background-color: #315a08;
+                        }
                     }
                     
                     .box {
@@ -408,6 +424,10 @@ footer {
 
         .link_list {
             flex-direction: column;
+
+            li a:is(:hover,:focus) {
+                color: #767676;
+            }
         }
     }
 
