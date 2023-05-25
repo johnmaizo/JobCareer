@@ -446,6 +446,12 @@ footer {
             .box {
                 margin-block: 2em;
             }
+
+            .box {
+                img:not(.profile) {
+                    width: 100% !important;
+                }
+            }
         }
     }
 }
