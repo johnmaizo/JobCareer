@@ -453,9 +453,18 @@ footer {
     }
 }
 
-@media (max-width: 810px) {
-    main .career_advise {
+@media (max-width: 811px) {
+    .career_advise  {
         width: 100% !important;
+        // margin-inline: auto;
+
+        .grid_wrap {
+            margin-inline: auto;
+        }
+
+        .first_box {
+            height: 27em !important;
+        }
     } 
 }
 
